@@ -12,6 +12,7 @@ a{
 
 :root{
     --bgColor: #3816009f;
+    --lightBrown:#66564a;
 }
 
 #body-id{
@@ -37,63 +38,87 @@ a{
 
 #header #header-top-div{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 15px;
 }
 
-#header li{
-    display: inline;
-    margin-left: 15%;
-}
-
-#header h1{
+#header #header-top-div h1{
     font-family: 'Yellowtail', cursive;
     font-size: 60px;
-    color: #66564a;
-    font-style: bold;
+    color: var(--lightBrown);
+    font-weight: bolder;
 }
 
-article{
-    
+#header #header-top-div #search-box{
+    display: flex;
+    height: 40px;
 }
 
-article #content-div{
+#header #header-top-div #search-box .form-control{
+    background:none;
+}
+#header #header-top-div #search-box .form-control:hover{
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+#header li{
+    display: inline;
+    margin-left: 18%;
+}
+#header ul a{
+    color: var(--lightBrown);
+    font-size: 18px;
+    font-weight: bolder;
+}
+ul a:hover{
+    background-color: #857169b4;
+    transition: 0.5s;
+    padding: 8px;
+    border-radius: 6px;
+}
+main #content-div{
     margin: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
     justify-content: space-around; 
-      
 }
-article #content-div .coffee{
+main #content-div .coffee{
     text-align: center;
     margin: 15px 0;
     width: 300px;
-    /* border:solid 1px red; */
     position: relative;
     border-radius: 20px;
     overflow:hidden;
 }
 
-.coffee img{
+main #content-div .coffee img{
     width: 100%;
 }
 
-.coffee .coffee-info{
+main #content-div .coffee .coffee-info{
     position: absolute;
     right: 0;
     top:260px;
     align-items: center;
     background-color: #ffe7d69f;
 }
-/* ::-webkit-scrollbar { SCROLLLLLLLLLL
+
+main #content-div .coffee .coffee-info .hide-box{
+
+}
+::-webkit-scrollbar {
     width: 10px;
     background-color: #eaeaea;
     border-left: 1px solid #cecece;
+    border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #47575e;
+    background-color: var(--lightBrown);
+    border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #39484f;
-} */
+    background-color: var(--bgColor);
+} 
