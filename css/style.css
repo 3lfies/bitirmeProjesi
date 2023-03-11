@@ -1,26 +1,18 @@
-/* font-family: 'Lato', sans-serif;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Rubik', sans-serif;
-font-family: 'Yellowtail', cursive; */
 
-*{
-    box-sizing: border-box;
-}
 a{
     text-decoration: none;
+    color: var(--lightBrown);
 }
-
 :root{
     --bgColor: #3816009f;
     --lightBrown:#66564a;
+    --textColor:#1b0b00;
 }
-
 #body-id{
     background-color: var(--bgColor);
     background-image: url('/img/background-1.png');
     background-size: contain;
 }
-
 .container{
     margin-top: 60px;
     margin-bottom: 60px;
@@ -30,31 +22,26 @@ a{
     height: 800px;
     overflow: hidden;
 }
-
 #header{
     display: flex;
     flex-direction: column;
 }
-
 #header #header-top-div{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
 }
-
 #header #header-top-div h1{
     font-family: 'Yellowtail', cursive;
     font-size: 60px;
     color: var(--lightBrown);
     font-weight: bolder;
 }
-
 #header #header-top-div #search-box{
     display: flex;
     height: 40px;
 }
-
 #header #header-top-div #search-box .form-control{
     background:none;
 }
@@ -62,15 +49,14 @@ a{
     background-color: #fff;
     transition: 0.3s;
 }
-
 #header li{
     display: inline;
-    margin-left: 18%;
+    margin-left: 14%;
 }
 #header ul a{
-    color: var(--lightBrown);
     font-size: 18px;
     font-weight: bolder;
+    color: var(--lightBrown);
 }
 ul a:hover{
     background-color: #857169b4;
@@ -78,37 +64,89 @@ ul a:hover{
     padding: 8px;
     border-radius: 6px;
 }
-main #content-div{
+
+main{
+    position: relative;
+}
+
+article{
+    position: absolute;
+}
+
+article #products{
+    position: absolute;
     margin: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
     justify-content: space-around; 
 }
-main #content-div .coffee{
+main article #products .coffee{
     text-align: center;
-    margin: 15px 0;
-    width: 300px;
-    position: relative;
     border-radius: 20px;
-    overflow:hidden;
+    margin: 20px 20px;
+    width: 280px;
+    height: 350px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color:#ffe7d69f;
+}
+main article #products .coffee img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    border-radius: 20px;
 }
 
-main #content-div .coffee img{
-    width: 100%;
+main article #products .coffee:hover{
+    background: none;
+    opacity: 0.1;
+    width: 300px;
+    height: 370px;
+    transition: 0.5s;
 }
 
-main #content-div .coffee .coffee-info{
-    position: absolute;
-    right: 0;
-    top:260px;
-    align-items: center;
+main article #products .coffee .hide-box{
+    width: 280px;
+    height: 320px;
     background-color: #ffe7d69f;
+    border: 1px solid red;
 }
 
-main #content-div .coffee .coffee-info .hide-box{
-
+ article #content{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    overflow: hidden;
 }
+
+article #content .hide-box{
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+    width: 260px;
+    height: 350px;
+    cursor: pointer;
+}
+
+#footer{
+    position: absolute;
+    right: 50%;
+    
+}
+#footer i{
+    color: #ffe7d69f;
+    font-size: 20px;
+}
+#footer i:hover{
+    color: #fff;
+    font-size: 30px;
+    transition: 0.3s;
+}
+/*------------ scrollbar -----------*/
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #eaeaea;

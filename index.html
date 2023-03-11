@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&family=Rubik&family=Yellowtail&display=swap" rel="stylesheet">
     <div class="container">
+        
         <!-- header start -->
         <div id="header">
             <!-- nav start -->
@@ -31,80 +32,119 @@
             <ul>
                 <li><a href="index.html">Ana Sayfa</a></li>
                 <li><a href="#">İletişim</a></li>
-                <li><a href="#">Kaydettiklerim</a></li>
+                <li><a href="#">Tariflerim</a></li>
+                <li><a href="#">Tarif Ekle</a></li>
             </ul>
         </div>
         <!-- header end -->
         <!-- main start -->
         <main>
-            <div id="content-div" style="height: 500px; overflow-x: hidden; overflow-y: scroll;">
-                <div class="coffee">
-                    <img src="https://www.acouplecooks.com/wp-content/uploads/2021/09/Almond-Milk-Coffee-005.jpg" alt="">
-                    <div class="coffee-info">
-                        <p>Badem Sütlü Kahve</p>
-                        <div class="hide-box">
-                            <p>zorluk , kısaca malzemeler,üstüne geldiğinde görüncek </p>
-                        </div>
+            <article style="height: 450px; overflow-x: hidden; overflow-y: scroll;">
+                <!-- kahve fotoğrafları -->
+                <div id="products">
+                    <div class="coffee">
+                        <a href="https://www.acouplecooks.com/almond-milk-coffee/"><img src="https://www.acouplecooks.com/wp-content/uploads/2021/09/Almond-Milk-Coffee-005.jpg" alt=""></a>
+                        <a href="https://www.acouplecooks.com/almond-milk-coffee/"><p>Badem Sütlü Kahve</p></a>
+                    </div>
+                    
+                    <div class="coffee">
+                        <a href="https://www.acouplecooks.com/how-to-make-an-americano/"><img src="https://www.acouplecooks.com/wp-content/uploads/2020/10/How-to-make-an-Americano-001.jpg" alt=""></a>
+                        <a href="https://www.acouplecooks.com/how-to-make-an-americano/"><p>Americano</p></a>
+                    </div>
+                    
+                    <div class="coffee">
+                        <a href="https://www.acouplecooks.com/how-to-make-a-mocha/"><img src="https://www.acouplecooks.com/wp-content/uploads/2020/10/How-to-Make-a-Mocha-002.jpg" alt=""></a>
+                        <a href="https://www.acouplecooks.com/how-to-make-a-mocha/"><p>Mocha</p></a>
+                    </div>
+                        
+                    <div class="coffee">
+                        <a href="https://www.acouplecooks.com/vanilla-latte/"><img src="https://www.acouplecooks.com/wp-content/uploads/2021/11/Vanilla-Latte-001.jpg" alt=""></a>
+                        <a href="https://www.acouplecooks.com/vanilla-latte/"><p>Vanilyalı Latte</p></a>
+                    </div>
+                    
+                    <div class="coffee">
+                        <a href="https://www.acouplecooks.com/iced-chai-latte/"><img src="https://www.acouplecooks.com/wp-content/uploads/2020/10/Iced-Chai-Tea-Latte-010.jpg" alt=""></a>
+                        <a href="https://www.acouplecooks.com/iced-chai-latte/"><p>Buzlu Chai Latte</p></a>                    
+                    </div>
+                    
+                    <div class="coffee">
+                        <a href="https://www.acouplecooks.com/iced-pumpkin-spice-latte/"><img src="https://www.acouplecooks.com/wp-content/uploads/2021/09/Iced-Pumpkin-Spice-Latte-006.jpg" alt=""></a>
+                        <a href="https://www.acouplecooks.com/iced-pumpkin-spice-latte/"><p>Buzlu Balkabağı Baharatlı Latte</p></a>
                     </div>
                 </div>
-                <div class="coffee">
-                    <img src="https://www.acouplecooks.com/wp-content/uploads/2020/10/How-to-make-an-Americano-001.jpg" alt="">
-                    <div class="coffee-info">
-                        <p>Americano</p>
-                        <div id="hide-box">
-                            <p>zorluk , kısaca malzemeler,üstüne geldiğinde görüncek </p>
-                        </div>
+
+                <!-- İçindekiler -->
+                <div id="content" >
+                    <!-- badem sütlü -->
+                    <div class="hide-box">
+                        <p>Malzemeler</p>
+                        <ul>
+                            <li>Espresso</li>
+                            <li>Taze badem sütü</li>
+                            <li>Vanilya şurubu veya saf akçaağaç şurubu</li>
+                        </ul>
+                    </div>
+                    <!-- americano -->
+                    <div class="hide-box">
+                        <p>Malzemeler</p>
+                        <ul>
+                            <li>Espresso</li>
+                            <li>Sıcak su</li>
+                        </ul>
+                    </div>
+                    <!-- Mocha -->
+                    <div class="hide-box">
+                        <p>Malzemeler</p>
+                        <ul>
+                            <li>Espresso</li>
+                            <li>Damla çikolata</li>
+                            <li>Taze tam yağlı süt</li>
+                            <li>Akçaağaç şurubu</li>
+                        </ul>
+                    </div>
+                    <!-- vanilyalı -->
+                    <div class="hide-box">
+                        <p>Malzemeler</p>
+                        <ul>
+                            <li>Espresso</li>
+                            <li>Taze süt veya bitkisel süt</li>
+                            <li>Vanilya şurubu</li>
+                        </ul>
+                    </div>
+                    <!-- buzlu chai -->
+                    <div class="hide-box">
+                        <p>Malzemeler</p>
+                        <ul>
+                            Malzemeler
+                            <li>Su</li>
+                            <li>Chai baharat karışımı</li>
+                            <li>Siyah çay</li>
+                            <li>Bal</li>
+                            <li>Tercihen süt</li>
+                        </ul>
+                    </div>
+                    <!-- balkabaklı -->
+                    <div class="hide-box">
+                        <p>Malzemeler</p>
+                        <ul>
+                            <li>Espresso (veya sert kahve)</li>
+                            <li>Balkabağı püresi</li>
+                            <li>Akçaağaç şurubu</li>
+                            <li>Süt</li>
+                            <li>Buz</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="coffee">
-                    <img src="https://www.acouplecooks.com/wp-content/uploads/2020/10/How-to-Make-a-Mocha-002.jpg" alt="">
-                    <div class="coffee-info">
-                        <p>Mocha</p>
-                        <div id="hide-box">
-                            <p>zorluk , kısaca malzemeler,üstüne geldiğinde görüncek </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="coffee">
-                    <img src="https://www.acouplecooks.com/wp-content/uploads/2021/11/Vanilla-Latte-001.jpg" alt="">
-                    <div class="coffee-info">
-                        <p>Vanilyalı Latte</p>
-                        <div id="hide-box">
-                            <p>zorluk , kısaca malzemeler,üstüne geldiğinde görüncek </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="coffee">
-                    <img src="https://www.acouplecooks.com/wp-content/uploads/2020/10/Iced-Chai-Tea-Latte-010.jpg" alt="">
-                    <div class="coffee-info">
-                        <p>Buzlu Chai Latte</p>
-                        <div id="hide-box">
-                            <p>zorluk , kısaca malzemeler,üstüne geldiğinde görüncek </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="coffee">
-                    <img src="https://www.acouplecooks.com/wp-content/uploads/2021/09/Iced-Pumpkin-Spice-Latte-006.jpg" alt="">
-                    <div class="coffee-info">
-                        <p>Buzlu Balkabağı Baharatlı Latte</p>
-                        <div id="hide-box">
-                            <p>zorluk , kısaca malzemeler,üstüne geldiğinde görüncek </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <input class="btn btn-outline-secondary" id="kaydetbtn" type="button" value="Tarifi Kaydet">
-            <input class="btn btn-outline-secondary" id="eklebtn" type="button" value="Tarif Ekle">
+            </article>
         </main>
         <!-- main end -->
-        
     </div>
     <!-- footer start -->
-    <footer>
+    <div id="footer">
         <a href="#"><i class="fa-brands fa-github"></i></a>
         <a href="#"><i class="fa-solid fa-envelope"></i></a>
         <a href="#"><i class="fa-brands fa-discord"></i></a>
-    </footer>
+    </div>
     <!-- footer end -->
     
     <script src="js/script.js"></script>
